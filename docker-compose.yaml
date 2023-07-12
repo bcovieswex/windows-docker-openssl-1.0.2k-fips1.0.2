@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  ssl:
+    image: centos7-openssl-102k
+    tty: true
+    volumes:
+      - ./secrets:/root/secrets
