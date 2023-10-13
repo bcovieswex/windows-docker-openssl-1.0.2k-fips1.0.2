@@ -1,7 +1,10 @@
 version: '3.9'
 services:
   ssl:
-    image: centos7-openssl-102k
+    image: bcovies/centos7-openssl-102k
+    build:
+      context: .
+      dockerfile: Dockerfile
     tty: true
     volumes:
       - ./secrets:/root/secrets
